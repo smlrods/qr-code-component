@@ -1,0 +1,10 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #root {
+    @apply flex justify-center items-center min-h-screen bg-light-gray;
+  }
+}

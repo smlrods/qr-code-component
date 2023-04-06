@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+@layer components {
+  #card {
+    @apply rounded-3xl shadow-xl grid grid-rows-[270px_1fr] grid-cols-[270px] p-[15px] text-center bg-white;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  #card .main {
+    @apply m-[20px_12px];
+  }
+
+  #card h2 {
+    @apply text-lg mb-[12px] font-bold text-dark-blue;
+  }
+
+  #card .description {
+    @apply text-[15px] text-grayish-blue leading-5;
+  }
+
+  .qrcode {
+    @apply bg-qrcode bg-cover bg-center rounded-xl;
+  }
+}
